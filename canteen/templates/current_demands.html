@@ -4,13 +4,24 @@
 
 <html>
     <head>
+        <style>
+            table, tr, th, td{
+                margin: 1%;
+                background-color: pink;
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                background-color: yellow;
+            }
+        </style>
     </head>
 
     <body>
-      <h3 style="float:left;"> Current pending items summary:</h3>
+      <h3 style="float:left; margin:1%;"> Current pending items summary:</h3>
       <br>
        
-        <table class="table table-dark" style="width:38%; float:left;margin:1%;">
+        <table class="table table-striped" style="width:device-size; float:left;margin:1%;">
             
             <thead>
                 <tr>
@@ -45,8 +56,8 @@
             </tbody>
         </table>
        
-     <h3 style="float:left;"> More details about order items: </h3> 
-        <table class="table table-striped" style="width:58%; float:left;margin:1%;">
+     <h3 style="float:left; margin:1%;"> More details about order items: </h3> 
+        <table class="table table-striped" style="width:device-size; float:left;margin:1%;">
             
             <thead>
                 <tr>
