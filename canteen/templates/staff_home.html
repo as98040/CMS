@@ -28,13 +28,18 @@
 
             var csrftoken = getToken('csrftoken');
         </script>
+        <style>
+            a:hover{
+                background-color: pink;
+            }
+        </style>
 
     </head>
 
     <body>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="{% url 'store' %}">Product Management</a>
+            <a class="navbar-brand" href="{% url 'store' %}"><span style="color:black;font-weight:bold">Product Management</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,19 +47,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'current_demands' %}">Current_Demands <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'current_demands' %}"><span style="color:black;font-weight:bold">Current Demands </span><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'pending_deliver' %}">Pending_deliver</a>
+                    <a class="nav-link" href="{% url 'pending_deliver' %}"><span style="color:black;font-weight:bold">Pending Deliver</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'order_completed' %}">Orders_completed</a>
+                    <a class="nav-link" href="{% url 'order_completed' %}"><span style="color:black;font-weight:bold">Orders Completed</span></a>
                 </li>
                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'predict_orders' %}">Rough_Predicted_Future_Orders </a>
+                    <a class="nav-link" href="{% url 'predict_orders' %}"><span style="color:black;font-weight:bold">Rough Predicted Future Orders </span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'product_details' %}">Product_details </a>
+                    <a class="nav-link" href="{% url 'product_details' %}"><span style="color:black;font-weight:bold">Product Details </span></a>
                 </li>
                 </ul>
             </div>
